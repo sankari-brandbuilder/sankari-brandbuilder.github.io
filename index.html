@@ -16,6 +16,8 @@
     <title>Sankari Venkatraman - Brand Builder</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <!-- Custom Styles -->
     <style>
         body {
@@ -49,7 +51,7 @@
             text-align: center;
         }
         .header-content {
-            margin-top: 200px; 
+            margin-top: 168px; 
             color: #fff;
             width: 100%;
         }
@@ -87,7 +89,89 @@
             margin: 0 10px;
             text-decoration: none;
         }
+        .about-section {
+            min-height: 100vh; /* Makes sure the section covers the entire viewport height */
+            background-color: #000;
+            padding: 60px 0; /* Vertical padding */
+        }
 
+        .section-title {
+            font-size: 7vw;
+            color: rgba(255, 255, 255, 0.442);
+            /* font-size: 36px;
+            font-weight: 700;
+            color: #f1c40f;  *//* Gold-like color to match the theme */
+            margin-bottom: 20px;
+        }
+
+        .about-text {
+            font-size: 2vw;
+            line-height: 1.8;
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        .card {
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card img {
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            color:#fff;
+        }
+
+        .card-text {
+            font-size: 14px;
+            color: #f0ad4e;
+        }
+        .rounded-rectangle {
+            border-radius: 20px; /* Adjust the radius to make the corners round */
+            padding: 10px 30px; /* Optional: Adjust padding for the desired button size */
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 5px;
+            padding-top: 10px;
+        }
+
+        .icon-circle {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .icon-circle i {
+            color: #fff;
+            font-size: 22px;
+            transition: color 0.3s ease;
+        }
+
+        .icon-circle:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .icon-circle:hover i {
+            color: #f0ad4e;
+        }
         /* Responsive Design */
         @media (min-width: 768px) {
             .header-section {
@@ -132,34 +216,60 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand text-white" href="#">SANKARI</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon text-white">&#9776;</span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+    <!-- Header Section -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">SANKARI</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
 
     <!-- Header Section -->
-    <section class="header-section">
+    <section class="header-section" id="home">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 header-content">
                     <p>Hello!</p>
                     <h1>I'm <span class="highlight">Sankari Venkatraman</span></h1>
-                    <h2>A Sales and Marketing Professional</h2>
-                    <a href="#contact" class="btn btn-custom">Hire Me</a>
-                    <a href="#portfolio" class="btn btn-outline-light">My Works</a>
+                    <h2 class="mb-5">A Sales and Marketing Professional</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="mailto:er.sankari@gmail.com" class="btn btn-custom rounded-rectangle">Hire Me</a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/sankari-venkat-raman/" target="_blank" class="icon-circle">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="mailto:er.sankari@gmail.com" target="_blank" class="icon-circle">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="https://www.instagram.com/sankarivenkatraman" target="_blank" class="icon-circle">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- Social Media Icons -->
+                    <!-- Social Media Icons -->
+                    
                 </div>
                 <div class="col-md-6">
                     <!-- Add image here -->
@@ -169,14 +279,64 @@
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-text">
+                        I talk. I connect. I build business.
+                    </p>
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-12 mb-4">
+                    <div class="card d-flex flex-row p-3 align-items-center">
+                        <img src="images/suitcase_col.png" alt="Masters" class="img-fluid" width="80">
+                        <div class="ml-4">
+                            <h2 class="card-title mb-1">Business Development Executive</h2>
+                            <p class="card-text"> HumbleTree Cloud Private limited </p>
+                            <p class="card-text text-muted">2023 - 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 1: Masters Degree -->
+                <div class="col-md-12 mb-4">
+                    <div class="card d-flex flex-row p-3 align-items-center">
+                        <img src="images/graduation_col.png" alt="Masters" class="img-fluid" width="80">
+                        <div class="ml-4">
+                            <h2 class="card-title mb-1">Master's of Business Administration</h2>
+                            <p class="card-text"> KCT Business School</p>
+                            <p class="card-text text-muted">2020 - 2022</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 2: Bachelor's Degree -->
+                <div class="col-md-12 mb-4">
+                    <div class="card d-flex flex-row p-3 align-items-center">
+                        <img src="images/graduation_col.png" alt="Bachelors" class="img-fluid" >
+                        <div class="ml-4">
+                            <h2 class="card-title mb-1">Bachelor of Engineering in Computer Science</h2>
+                            <p class="card-text"> Avinashilingam Institue of Home Science and Higher Education</p>
+                            <p class="card-text text-muted">2016 - 2020</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    </section>
+
+
     <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2024 Sankari Venkatraman. All Rights Reserved.</p>
-        <div class="social-icons">
-            <a href="#">Facebook</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Twitter</a>
-        </div>
     </footer>
 
     <!-- Bootstrap JS and dependencies -->
