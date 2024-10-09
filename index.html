@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <title>Sankari Venkatraman - Sales and Marketing</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            background: #000000;
+            font-size: 16px;
+            line-height: 1.8;
+            font-weight: 400;
+            color: #999999; 
+        }
+        .navbar {
+            background-color: #000;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #f0ad4e !important;
+        }
+        .header-section {
+            min-height: 100vh; /* Makes sure the section covers the entire viewport height */
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .header-content {
+            margin-top: 200px; 
+            color: #fff;
+            width: 100%;
+        }
+        .header-content p {
+            font-size: 1.2rem;
+        }
+        .header-content h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .header-content h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+        }
+        .highlight {
+            color: #f0ad4e;
+        }
+        .btn-custom {
+            background-color: #f0ad4e;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 5px;
+        }
+        .btn-custom:hover {
+            background-color: #fff;
+        }
+        .footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+        .social-icons a {
+            color: #f0ad4e;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .header-section {
+                text-align: left;
+                padding-left: 50px;
+            }
+            .header-content {
+                max-width: 50%;
+            }
+            .header-content h1 {
+                font-size: 4rem;
+            }
+            .header-content h2 {
+                font-size: 1.5rem;
+            }
+            .col-md-6 img {
+                display: block;
+            }
+        }
+
+        /* Center the image and text in mobile */
+        @media (max-width: 767px) {
+            .header-content h1 {
+                font-size: 2.5rem;
+            }
+            .header-content h2 {
+                font-size: 1.2rem;
+            }
+            .header-content {
+                margin-top: 20px;
+            }
+            .col-md-6 {
+                text-align: center;
+            }
+            .col-md-6 img {
+                max-width: 80%;
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">SANKARI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white">&#9776;</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 header-content">
+                    <p>Hello!</p>
+                    <h1>I'm <span class="highlight">Sankari Venkatraman</span></h1>
+                    <h2>A Sales and Marketing Professional</h2>
+                    <a href="#contact" class="btn btn-custom">Hire Me</a>
+                    <a href="#portfolio" class="btn btn-outline-light">My Works</a>
+                </div>
+                <div class="col-md-6">
+                    <!-- Add image here -->
+                    <img src="images/sank.png" alt="Profile Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Sankari Venkatraman. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
